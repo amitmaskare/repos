@@ -1,30 +1,28 @@
 import React from "react";
-import Header from "../../components/Header";
 import Cart from "./Cart";
 import Category from "./Category";
 import Menu from "./Menu";
 
 const MenuList = () => {
   return (
-    <>
-    <div className="h-screen flex flex-col bg-background-light">
-      <Header />
+    <div className="flex h-full gap-4">
+      
+      {/* LEFT CONTENT */}
+      <div className="flex-1 flex flex-col bg-white rounded-xl overflow-hidden">
+        <Category />
 
-      <main className="flex flex-1 overflow-hidden">
-        {/* LEFT */}
-        <section className="flex-1 flex flex-col overflow-hidden">
-          <Category />
-          <div className="flex-1 overflow-y-auto p-8 custom-scrollbar bg-slate-50/50">
-            <Menu />
-          </div>
-        </section>
+        <div className="flex-1 overflow-y-auto p-6 custom-scrollbar bg-slate-50/50">
+          <Menu />
+        </div>
+      </div>
 
-        {/* RIGHT */}
+      {/* RIGHT CART */}
+      <div className="w-[360px] shrink-0">
         <Cart />
-      </main>
+      </div>
+
     </div>
-    </>
   );
-}
+};
 
 export default MenuList;

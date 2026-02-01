@@ -7,9 +7,7 @@ import Notifications from "../../components/Notifications";
 const Dashboard = () => {
   return (
     <>
-    <Header />
-   <div className="h-screen flex bg-gray-50">
-  <main className="flex-1 overflow-y-auto p-8">
+   <section className="flex-1 flex flex-col overflow-hidden">
     {floors.map((floor) => (
       <div key={floor.id} className="mb-14">
         
@@ -37,10 +35,9 @@ const Dashboard = () => {
         </div>
       </div>
     ))}
-  </main>
-
-      <Notifications data={notifications} />
-    </div>
+  </section>
+    <Notifications data={notifications} />
+   
     </>
   );
 };

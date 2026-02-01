@@ -1,0 +1,102 @@
+body {
+  background: #f7f8fa;
+  font-family: Inter, sans-serif;
+}
+
+.orders-layout {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+.orders-left {
+  flex: 3;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.orders-right {
+  flex: 1;
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.orders-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-outline {
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  margin-right: 10px;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.btn-primary {
+  background: #ff7a00;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+}
+
+.orders-table {
+  width: 100%;
+  margin-top: 15px;
+  border-collapse: collapse;
+}
+
+.orders-table th,
+.orders-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+.eye {
+  cursor: pointer;
+}
+
+.status {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.preparing { background: #fff3cd; color: #b58100; }
+.completed { background: #d1fae5; color: #047857; }
+.ready { background: #e0e7ff; color: #3730a3; }
+.paid { background: #e5e7eb; color: #374151; }
+
+.notifications .notif-item {
+  display: flex;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.notif-icon {
+  font-size: 20px;
+}
+
+.tag {
+  font-size: 11px;
+  background: #f1f5f9;
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+.view-all {
+  margin-top: 12px;
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: #fff;
+}
